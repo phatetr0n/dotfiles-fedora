@@ -17,17 +17,15 @@
     "modules-left": [
         "custom/appmenu",
         "group/quicklinks",
-        "hyprland/window"
+        "hyprland/workspaces"
     ],
     "modules-center": [
-        "hyprland/workspaces"
+        "hyprland/window"
     ],
     "modules-right": [
         "mpd", 
         "pulseaudio", 
-        "network", 
-        "cpu", 
-        "memory", 
+        "network",
         "keyboard-state", 
         "battery", 
         "clock", 
