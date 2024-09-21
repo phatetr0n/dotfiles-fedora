@@ -51,7 +51,7 @@ window#waybar {
     font-weight: bold;
     font-style: normal;
     font-size: 16px;
-    color: @color1;
+    color: @color6;
 }
 
 #workspaces button {
@@ -59,12 +59,12 @@ window#waybar {
     margin: 4px 3px;
     border-radius: 15px;
     border: 0px;
-    color: @color1;
+    color: @color6;
     transition: all 0.3s ease-in-out;
 }
 
 #workspaces button.active {
-    color: @color2;
+    color: @color5;
     background: @background;
     border-radius: 15px;
     min-width: 40px;
@@ -72,7 +72,7 @@ window#waybar {
 }
 
 #workspaces button:hover {
-    color: @color3;
+    color: @color5;
     background: @background;
     border-radius: 15px;
 }
@@ -90,7 +90,7 @@ tooltip {
 }
 
 tooltip label {
-    color: @color1;
+    color: @color3;
 }
 
 /* -----------------------------------------------------
@@ -102,7 +102,7 @@ tooltip label {
     margin: 10px 15px 10px 0px;
     padding: 2px 10px 0px 10px;
     border-radius: 12px;
-    color:@color4;
+    color:@color5;
     font-size:16px;
     font-weight:normal;
 }
@@ -184,7 +184,7 @@ window#waybar.empty #window {
 
 #custom-appmenu {
 /*     background-color: @background; */
-    color: @color1;
+    color: @color5;
     font-size:30px;
 /*     border-radius: 15px; */
     margin: 0px 10px 5px 5px;
@@ -198,7 +198,7 @@ window#waybar.empty #window {
     margin: 2px 20px 0px 0px;
     padding:0px;
     font-size:20px;
-    color: @color1;
+    color: @color6;
 }
 
 /* -----------------------------------------------------
@@ -209,7 +209,7 @@ window#waybar.empty #window {
     margin:0px;
     padding:0px;
     font-size:16px;
-    color:@color1;
+    color:@color6;
 }
 
 #language {
@@ -235,14 +235,14 @@ window#waybar.empty #window {
 #pulseaudio {
     background-color: @background;
     font-size: 16px;
-    color: @color1;
+    color: @color6;
     border-radius: 15px;
     margin: 10px 10px 10px 0px;
 }
 
 #pulseaudio.muted {
     background-color: @background;
-    color: @color1;
+    color: @color6;
 }
 
 /* -----------------------------------------------------
@@ -252,19 +252,19 @@ window#waybar.empty #window {
 #network {
     background-color: @background;
     font-size: 16px;
-    color: @color2;
+    color: @color6;
     border-radius: 15px;
     margin: 10px 10px 10px 0px;
 }
 
 #network.ethernet {
     background-color: @background;
-    color: @color2;
+    color: @color6;
 }
 
 #network.wifi {
     background-color: @background;
-    color: @color2;
+    color: @color6;
 }
 
 /* -----------------------------------------------------
@@ -274,7 +274,7 @@ window#waybar.empty #window {
  #bluetooth, #bluetooth.on, #bluetooth.connected {
     background-color: @background;
     font-size: 16px;
-    color: @color2;
+    color: @color6;
     border-radius: 15px;
     margin: 10px 15px 10px 0px;
 }
@@ -292,13 +292,13 @@ window#waybar.empty #window {
 #battery {
     background-color: @background;
     font-size: 16px;
-    color: @color3;
+    color: @color6;
     border-radius: 15px;
     margin: 10px 10px 10px 0px;
 }
 
 #battery.charging, #battery.plugged {
-    color: @color3;
+    color: @color6;
     background-color: @background;
 }
 
