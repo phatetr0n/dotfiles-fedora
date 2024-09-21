@@ -16,7 +16,6 @@
     ],    
     "modules-left": [
         "custom/appmenu",
-        "group/quicklinks",
         "hyprland/workspaces"
     ],
     "modules-center": [

@@ -59,7 +59,7 @@ window#waybar {
     margin: 4px 3px;
     border-radius: 15px;
     border: 0px;
-    color: @color6;
+    color: @color2;
     transition: all 0.3s ease-in-out;
 }
 
@@ -184,7 +184,7 @@ window#waybar.empty #window {
 
 #custom-appmenu {
 /*     background-color: @background; */
-    color: @color5;
+    color: @color2;
     font-size:30px;
 /*     border-radius: 15px; */
     margin: 0px 10px 5px 5px;
