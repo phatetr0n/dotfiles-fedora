@@ -31,8 +31,8 @@ alias ascii='~/dotfiles/scripts/figlet.sh' # figlet for ASCII
 
 # Additional aliases
 alias shl='Hyprland' # start Hyprland; for use after tty login
-alias vpn='~/dotfiles/scripts/vpn.sh' # tailscale vpn. uses cached exit node list for vpn selection. check script for more
-alias npv='sudo tailscale down' # take down tailscale
+alias vpn='~/dotfiles/scripts/vpn.sh' # vpn. uses cached exit node list for vpn selection. check script for more
+alias npv='piactl disconnect' # take down vpn
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

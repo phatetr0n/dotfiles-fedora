@@ -1,5 +1,8 @@
 # install extras script fedora edition
 
+# paths/variables
+dfextra=$HOME/dotfiles/.extra
+
 #  _________  _   _
 # |__  / ___|| | | |
 #   / /\___ \| |_| |
@@ -11,8 +14,7 @@ sudo dnf install zsh
 # install eza (replaces ls)
 sudo dnf install eza
 # install oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-# you may have to run the script again here
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # you may have to run the script again after this one
 # clone oh-my-zsh plugins into their proper place
 sudo git clone https://github.com/chrissicool/zsh-256color ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-256color # zsh-256color
 sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions # zsh-autosuggestions
@@ -29,15 +31,8 @@ sudo git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUST
 # create fonts and sorting directories
 mkdir $HOME/.fonts
 mkdir $HOME/.fonts/m
-# get 4 recommended fonts for p10k in terminal, move to fonts directory under 'm'
-wget -P $HOME/Downloads https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf
-mv $HOME/Downloads/MesloLGS\ NF\ Regular.ttf $HOME/.fonts/m
-wget -P $HOME/Downloads https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf
-mv $HOME/Downloads/MesloLGS\ NF\ Bold.ttf $HOME/.fonts/m
-wget -P $HOME/Downloads https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf
-mv $HOME/Downloads/MesloLGS\ NF\ Italic.ttf $HOME/.fonts/m
-wget -P $HOME/Downloads https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold%20Italic.ttf
-mv $HOME/Downloads/MesloLGS\ NF\ Bold\ Italic.ttf $HOME/.fonts/m
+# copy fonts from .extra and place in new font directories
+cp $dfextra/MesloLGS*.ttf $HOME/.fonts/m
 # create .font.config file
 echo "<?xml version=\"1.0\"?><!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">
 <fontconfig>
