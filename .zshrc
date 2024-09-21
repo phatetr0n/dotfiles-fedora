@@ -28,6 +28,7 @@ alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long li
 alias ld='eza -lhD --icons=auto' # long list dirs
 alias screenshot='slurp | grim -g -' # follow with screenshot name+extension to take SS of certain part of screen
 alias ascii='~/dotfiles/scripts/figlet.sh' # figlet for ASCII
+alias wp='waypaper' # manage wallpapers
 
 # Additional aliases
 alias shl='Hyprland' # start Hyprland; for use after tty login
