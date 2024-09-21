@@ -57,3 +57,5 @@ pip3 install pywal
 # waypaper
 sudo dnf copr enable solopasha/hyprland # enable repo for waypaper
 sudo dnf install waypaper
+# nmcli and nmtui
+sudo dnf install NetworkManager-tui
