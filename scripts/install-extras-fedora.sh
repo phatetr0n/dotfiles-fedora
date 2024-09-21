@@ -12,6 +12,7 @@ sudo dnf install zsh
 sudo dnf install eza
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+# you may have to run the script again here
 # clone oh-my-zsh plugins into their proper place
 sudo git clone https://github.com/chrissicool/zsh-256color ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-256color # zsh-256color
 sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions # zsh-autosuggestions
@@ -52,7 +53,7 @@ echo "<?xml version=\"1.0\"?><!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">
 #                  |___/
 
 # pywal
-sudo pip3 install pywal
+pip3 install pywal
 # waypaper
 sudo dnf copr enable solopasha/hyprland # enable repo for waypaper
 sudo dnf install waypaper

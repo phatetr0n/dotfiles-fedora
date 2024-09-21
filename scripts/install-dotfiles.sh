@@ -2,7 +2,7 @@
 # install dotfiles for specified program list
 
 # List of program directories to strip and link
-dirs=("hypr" "dunst" "alacritty" "rofi" "waybar" "wlogout" "fastfetch" "waypaper")
+dirs=("hypr" "dunst" "alacritty" "rofi" "waybar" "wlogout" "fastfetch" "waypaper" "kate" "wal")
 
 # Base paths
 config_dir="$HOME/.config"
@@ -10,7 +10,7 @@ dotfiles_dir="$HOME/dotfiles"
 
 # zshrc
 rm $HOME/.zshrc
-ln $dotfiles_dir/.zshrc
+ln $dotfiles_dir/.zshrc $HOME/.zshrc
 
 # Loop through the directories
 for dir in "${dirs[@]}"; do
