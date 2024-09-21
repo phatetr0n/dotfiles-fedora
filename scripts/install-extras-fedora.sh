@@ -3,6 +3,7 @@
 # paths/variables
 dfextra=$HOME/dotfiles/.extra
 
+
 #  _________  _   _
 # |__  / ___|| | | |
 #   / /\___ \| |_| |
@@ -54,3 +55,13 @@ sudo dnf copr enable solopasha/hyprland # enable repo for waypaper
 sudo dnf install waypaper
 # nmcli and nmtui
 sudo dnf install NetworkManager-tui
+
+
+#  _____ _
+# |_   _| |__   ___ _ __ ___   ___  ___
+#   | | | '_ \ / _ \ '_ ` _ \ / _ \/ __|
+#   | | | | | |  __/ | | | | |  __/\__ \
+#   |_| |_| |_|\___|_| |_| |_|\___||___/
+
+# breeze-gtk
+sudo dnf install breeze-gtk
