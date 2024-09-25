@@ -11,9 +11,9 @@ dfextra=$HOME/dotfiles/.extra
 # /____|____/|_| |_|
 
 # install zsh
-sudo dnf install zsh
+sudo dnf -y install zsh
 # install eza (replaces ls)
-sudo dnf install eza
+sudo dnf -y install eza
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" # you may have to run the script again after this one
 # clone oh-my-zsh plugins into their proper place
@@ -50,11 +50,11 @@ echo "<?xml version=\"1.0\"?><!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">
 
 # pywal
 pip3 install pywal
-# waypaper
-sudo dnf copr enable solopasha/hyprland # enable repo for waypaper
-sudo dnf install waypaper
+# enable repo for waypaper and hyprland, then install waypaper
+sudo dnf -y copr enable solopasha/hyprland
+sudo dnf -y install waypaper
 # nmcli and nmtui
-sudo dnf install NetworkManager-tui
+sudo dnf -y install NetworkManager-tui
 
 
 #  _____ _
@@ -64,4 +64,4 @@ sudo dnf install NetworkManager-tui
 #   |_| |_| |_|\___|_| |_| |_|\___||___/
 
 # breeze-gtk
-sudo dnf install breeze-gtk
+sudo dnf -y install breeze-gtk
