@@ -337,6 +337,19 @@ window#waybar.empty #window {
 }
 
 /* -----------------------------------------------------
+ * SwayNC
+ * ----------------------------------------------------- */
+
+#custom-notification {
+background-color: @background;
+font-size: 16px;
+color: @color2;
+border-radius: 15px;
+min-width: 45px;
+margin: 10px 10px 10px 0px;
+}
+
+/* -----------------------------------------------------
  * Other
  * ----------------------------------------------------- */
 

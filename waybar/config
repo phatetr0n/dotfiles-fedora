@@ -29,6 +29,7 @@
         "battery", 
         "clock", 
         "tray",
-        "custom/exit"
+        // "custom/exit",
+        "custom/notification"
     ]
 }
