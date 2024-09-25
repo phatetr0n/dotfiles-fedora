@@ -168,7 +168,7 @@
   background: @background;
   color: @color1;
   caret-color: @color1;
-  border: 1px solid @color2;
+  border: 1px solid @foreground;
   border-radius: 12px;
 }
 
@@ -182,13 +182,13 @@
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .inline-reply .inline-reply-button:disabled {
   background: initial;
-  color: @color0;
+  color: @color1;
   border: 1px solid @foreground;
   border-color: transparent;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .inline-reply .inline-reply-button:hover {
-  background: @foreground;
+  background: @background;
 }
 
 .notification-row .notification-background .notification .notification-action {
@@ -331,7 +331,7 @@
 
 /* DND widget */
 .widget-dnd {
-  color: @text-color;
+  color: @color1;
   margin: 8px;
   font-size: 1.1rem;
 }
