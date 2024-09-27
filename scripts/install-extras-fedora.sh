@@ -61,7 +61,7 @@ sudo dnf -y install waypaper
 # nmcli and nmtui
 sudo dnf -y install NetworkManager-tui
 # nwg-displays clone + install
-git clone https://github.com/nwg-piotr/nwg-displays /opt/nwg-displays
+sudo git clone https://github.com/nwg-piotr/nwg-displays /opt/nwg-displays
 cd /opt/nwg-displays
 sudo ./install.sh
 
