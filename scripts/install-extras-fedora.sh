@@ -60,6 +60,9 @@ sudo dnf -y copr enable solopasha/hyprland
 sudo dnf -y install waypaper
 # nmcli and nmtui
 sudo dnf -y install NetworkManager-tui
+# enable repo for swaync, then install
+sudo dnf -y copr enable erikreider/SwayNotificationCenter
+sudo dnf -y install SwayNotificationCenter
 # nwg-displays clone + install
 sudo git clone https://github.com/nwg-piotr/nwg-displays /opt/nwg-displays
 cd /opt/nwg-displays
