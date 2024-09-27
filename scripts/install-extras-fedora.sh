@@ -9,6 +9,8 @@ dfextra=$HOME/dotfiles/.extra
 #   / /\___ \| |_| |
 #  / /_ ___) |  _  |
 # /____|____/|_| |_|
+#
+# ZSH
 
 # install zsh
 sudo dnf -y install zsh
@@ -28,6 +30,8 @@ sudo git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUST
 # | |_ / _ \| '_ \| __/ __|
 # |  _| (_) | | | | |_\__ \
 # |_|  \___/|_| |_|\__|___/
+#
+#Fonts
 
 # create fonts and sorting directories
 mkdir $HOME/.fonts
@@ -41,12 +45,13 @@ echo "<?xml version=\"1.0\"?><!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">
 </fontconfig>" > $HOME/.fonts.config
 
 
-#  ____
-# |  _ \ _ __ ___   __ _ ___
-# | |_) | '__/ _ \ / _` / __|
-# |  __/| | | (_) | (_| \__ \
-# |_|   |_|  \___/ \__, |___/
-#                  |___/
+#  ____            _
+# / ___| _   _ ___| |_ ___ _ __ ___
+# \___ \| | | / __| __/ _ \ '_ ` _ \
+#  ___) | |_| \__ \ ||  __/ | | | | |
+# |____/ \__, |___/\__\___|_| |_| |_|
+#        |___/
+# System
 
 # pywal
 pip3 install pywal
@@ -55,13 +60,18 @@ sudo dnf -y copr enable solopasha/hyprland
 sudo dnf -y install waypaper
 # nmcli and nmtui
 sudo dnf -y install NetworkManager-tui
-
+# nwg-displays clone + install
+git clone https://github.com/nwg-piotr/nwg-displays /opt/nwg-displays
+cd /opt/nwg-displays
+sudo ./install.sh
 
 #  _____ _
 # |_   _| |__   ___ _ __ ___   ___  ___
 #   | | | '_ \ / _ \ '_ ` _ \ / _ \/ __|
 #   | | | | | |  __/ | | | | |  __/\__ \
 #   |_| |_| |_|\___|_| |_| |_|\___||___/
+#
+# Themes
 
 # breeze-gtk
 sudo dnf -y install breeze-gtk
