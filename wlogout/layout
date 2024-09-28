@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "hyprlock",
+    "action" : "magick /var/tmp/wp.png -blur 0x12 /var/tmp/wp_blur.png && hyprlock",
     "text" : "Lock",
     "keybind" : "l"
 }
