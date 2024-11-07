@@ -53,8 +53,11 @@ echo "<?xml version=\"1.0\"?><!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">
 #        |___/
 # System
 
-# pywal
-pip3 install pywal
+# pywal16
+pip3 install pywal16
+# pywalfox
+pip install pywalfox
+pywalfox install
 # enable repo for waypaper and hyprland, then install waypaper
 sudo dnf -y copr enable solopasha/hyprland
 sudo dnf -y install waypaper
