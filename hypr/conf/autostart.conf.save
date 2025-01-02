@@ -1,0 +1,17 @@
+# Execute your favorite apps at launch
+exec-once = hyprpaper
+exec-once = waypaper --restore # restore waypaper
+exec-once = waybar
+exec-once = swaync
+
+# Load applications
+exec-once = webcord
+exec-once = easyeffects
+exec-once = thunderbird
+
+# Load configuration from ML4W Hyprland Settings App
+# exec = ~/.config/ml4w-hyprland-settings/hyprctl.sh
+
+# dark mode settings
+exec = gsettings set org.gnome.desktop.interface gtk-theme "Breeze-Dark"   # for GTK3 apps
+exec = gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"   # for GTK4 apps
